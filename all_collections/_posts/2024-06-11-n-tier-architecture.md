@@ -2,7 +2,7 @@
 layout: post
 title: System Design 101 - N-tier Architecture
 date: 2024-06-05 10:18:00
-categories: [architecture, system-design]
+categories: [architecture, system design]
 ---
 
 [Home](/)
