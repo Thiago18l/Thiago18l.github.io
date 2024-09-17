@@ -31,7 +31,7 @@ As palavras incomuns seriam ["sweet", "sour"] porque "sweet" aparece apenas na s
 Este problema é uma excelente oportunidade para praticar manipulação de strings e uso de dicionários em Python.
 
 
-Neste caso, iremos iniciar com uma função simples `uncommonFromSetences` que recebe como argumento duas strings e retorna um vetor de strings.
+Neste caso, iremos iniciar com uma função simples `uncommonFromSentences` que recebe como argumento duas strings e retorna um vetor de strings.
 Usaremos Python para resolver esse problema de forma simplificada, vamos por etapas:
 
 1. Dividir a string em uma lista de palavras.
@@ -40,7 +40,7 @@ Usaremos Python para resolver esse problema de forma simplificada, vamos por eta
 ```py
 from typing import List
 
-def uncommonFromSetences(s1: str, s2: str) -> List[str]:
+def uncommonFromSentences(s1: str, s2: str) -> List[str]:
     s1 = s1.split()
     s2 = s2.split()
 ```
@@ -77,7 +77,7 @@ Segue abaixo o código completo:
 ```py
 from typing import List
 
-def uncommonFromSetences(s1: str, s2: str) -> List[str]:
+def uncommonFromSentences(s1: str, s2: str) -> List[str]:
     s1 = s1.split()
     s2 = s2.split()
     d = {}
@@ -99,7 +99,7 @@ Com isso nosso problema está solucionado!
 Aqui vai também a versão de rust do nosso problema, onde seguimos a mesma lógica de usar um hashmap:
 
 ```rs
-fn uncommon_from_setences(s1: String, s2: String) -> Vec<String> {
+fn uncommon_from_sentences(s1: String, s2: String) -> Vec<String> {
     use std::collections::HashMap;
     let mut map = HashMap::new();
     for word in s1.split_whitespace() {
